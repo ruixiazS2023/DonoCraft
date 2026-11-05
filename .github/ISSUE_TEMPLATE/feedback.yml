@@ -1,0 +1,17 @@
+name: 体验建议
+description: 分享实际创作中的体验与建议
+title: "[建议] "
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: 使用场景与遇到的困难
+      description: 请描述你想完成什么，以及目前卡在哪里；不要上传私人剧本或客户素材。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 希望怎样改善
+    validations:
+      required: true

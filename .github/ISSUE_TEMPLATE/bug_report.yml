@@ -1,0 +1,39 @@
+name: 使用问题
+description: 报告安装、制作、保存或导出中的问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: "这里的内容公开可见。请勿上传 API Key、授权信息、私人剧本、完整配置或未脱敏日志。"
+  - type: input
+    id: version
+    attributes:
+      label: DonoCraft 版本
+      placeholder: 例如 0.1.9
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: 操作系统与架构
+      placeholder: 例如 macOS / Apple Silicon，或 Windows 11 / x64
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 描述从哪里开始、进行了哪些操作。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 补充信息
+      description: 可选，提供脱敏截图或必要的错误文字。
